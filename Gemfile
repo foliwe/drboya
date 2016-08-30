@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-
+ruby '2.3.1'
 
 gem 'rails', '4.2.6'
 gem 'pg', '~> 0.15'
@@ -14,6 +14,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'rails_12factor'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'capistrano-rails', group: :development
 group :development, :test do
