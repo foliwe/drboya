@@ -10,7 +10,8 @@ Rails.application.routes.draw do
   #get 'testimonies/new'
 
   #get 'testimonies/create'
-  resources :testimonies, only: [:new, :create]
+  resources :contacts, only: [:new, :create]
+  resources :testimonies, only: [:new, :create, :index]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

@@ -1,4 +1,9 @@
 class TestimoniesController < ApplicationController
+  def index
+    @testimonies = Testimony.paginate(:page => params[:page], :per_page => 8)
+  end
+
+
   def new
   	@testimony = Testimony.new
   end

@@ -1,0 +1,11 @@
+<div class="container">
+		<h2>Testimonies</h2>
+		<div class="">
+				 <%@testimonies.each do |testimony| %>
+				 <p><%= testimony.body %></p>
+				 <p><%= testimony.name %></p>
+				  <hr>
+				 <% end %>
+				 <%= will_paginate @testimonies %>
+	</div>
+</div>
