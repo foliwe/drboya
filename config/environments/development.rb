@@ -44,8 +44,8 @@ Rails.application.configure do
   address:              'smtp.live.com',
   port:                 25,
   domain:               'example.com',
-  user_name: "foliwe@live.com",
-  password: "Update_@@1882+1",
+  user_name: ENV["USER_EMAIL"],
+  password: ENV["USER_PASSWORD"],
   authentication:      'plain',
   enable_starttls_auto: true 
    }
