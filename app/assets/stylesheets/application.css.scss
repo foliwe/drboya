@@ -18,3 +18,14 @@
  @import "bootstrap";
  @import "font-awesome-sprockets";
  @import "font-awesome";
+
+ body{
+ padding-top: 70px;
+ }
+
+ .img-center {
+  margin:0 auto;
+  padding: 5px;
+  border-radius: 100%;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
