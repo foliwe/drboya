@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins
   get 'contents/herbal'
 
   get 'contents/patient'
