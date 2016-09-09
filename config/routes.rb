@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get 'contents/patient'
 
   get 'contents/faq'
+  get 'contents/about'
 
   root 'home#index'
 
