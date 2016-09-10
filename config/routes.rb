@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :products, except: [:edit, :destroy]
   get 'contents/herbal'
 
   get 'contents/patient'
@@ -26,8 +27,7 @@ Rails.application.routes.draw do
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 
   # Example resource route (maps HTTP verbs to controller actions automatically):
-  #   resources :products
-
+  # 
   # Example resource route with options:
   #   resources :products do
   #     member do
@@ -65,6 +65,5 @@ Rails.application.routes.draw do
   #   namespace :admin do
   #     # Directs /admin/products/* to Admin::ProductsController
   #     # (app/controllers/admin/products_controller.rb)
-  #     resources :products
-  #   end
+  #     #   end
 end

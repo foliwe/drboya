@@ -62,18 +62,32 @@
   </div>
 
   <div class="section">
-    <div class="well text-center">
-        <h2>Testimonies</h2>
-        <div class="">
-          <blockquote>
-             <%@testimonies.each do |testimony| %>
-             <p><%= testimony.body %></p>
-             <p><small><%= testimony.name %></small></p>
-             <br>
-             <% end %>
-             <%= will_paginate @testimonies %>
-          </blockquote>
+    <div class="row">
+       <div class="col-xs-12 col-md-8">
+          <div class="well text-center">
+          <h2>Testimonies</h2>
+          <div class="">
+            <blockquote>
+               <%@testimonies.each do |testimony| %>
+               <p><%= testimony.body %></p>
+               <p><small><%= testimony.name %></small></p>
+               <br>
+               <% end %>
+               <%= will_paginate @testimonies %>
+            </blockquote>
+          </div>
+          </div>
         </div>
+        <div class="col-xs-12 col-md-4">
+              <div class="well text-center">
+                <h2>Latest Products</h2>
+              <%@products.each do |product| %>
+               <p><%= link_to product.title,product %></p>
+               <hr>
+               <% end %>
+               <%=link_to 'view all products', products_path %>
+               </div>        
+          </div>
     </div>
   </div>
 
