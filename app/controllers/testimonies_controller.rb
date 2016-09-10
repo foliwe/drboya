@@ -1,4 +1,6 @@
 class TestimoniesController < ApplicationController
+
+  before_action :authenticate_user! ,except:[:index]
   def index
     @testimonies = Testimony.paginate(:page => params[:page], :per_page => 8)
   end
@@ -17,6 +19,9 @@ class TestimoniesController < ApplicationController
   	end
   end
   private
+
+    # Use callbacks to share common setup or constraints between actions.
+    
   def testimony_params
   	params.require(:testimony).permit(:name,:body)
   end
