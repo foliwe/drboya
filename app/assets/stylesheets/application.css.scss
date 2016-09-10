@@ -29,6 +29,36 @@
   border-radius: 100%;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
+.navbar-default{
+ background:#2980b9;
+ 
+}
 
+.navbar-fixed-top .nav {
+    padding: 15px 0;
+    color: #fff
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+   font-weight: 500;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #fff;
+   font-weight: 500;
+}
+
+
+.navbar-brand {
+  float: left;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 50px;
+}
+
+.navbar-default .navbar-brand {
+color: #fff;
+}
 
 
