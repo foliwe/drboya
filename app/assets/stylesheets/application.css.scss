@@ -18,10 +18,26 @@
  @import "bootstrap";
  @import "font-awesome-sprockets";
  @import "font-awesome";
+ @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700';
+ @import 'https://fonts.googleapis.com/css?family=Carrois+Gothic+SC';
 
  body{
+ font-family: 'Open Sans Condensed', sans-serif;
+ font-size: 20px;
  padding-top: 70px;
+ line-height: 200%;
+
  }
+
+h2 { 
+font-weight: bold;
+
+ }
+
+ .navbar{
+  font-family: 'Carrois Gothic SC', sans-serif;
+  font-size:17px !important;
+}
 
  .img-center {
   margin:0 auto;
