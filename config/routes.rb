@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   devise_for :users, controllers: { registrations: "registrations"}
-  resources :products, except: [:edit, :destroy]
+  resources :products
   get 'contents/herbal'
 
   get 'contents/patient'
@@ -14,7 +14,7 @@ Rails.application.routes.draw do
 
   #get 'testimonies/create'
   resources :contacts, only: [:new, :create]
-  resources :testimonies, only: [:new, :create, :index]
+  resources :testimonies, except: [:edit, :update]
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
