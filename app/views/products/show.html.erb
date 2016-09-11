@@ -5,7 +5,7 @@
 
 		<p>
   <strong>Description:</strong>
-  <%= @product.description %>
+  <p><%= @product.description %></p>
   <% if user_signed_in? %>
 		</p>
 		<p><%= link_to 'Edit this Product', edit_product_path(@product),class: "btn btn-xs btn-success" %> |<%= link_to "Delete this Product", product_path(@product), method: :delete,
