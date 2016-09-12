@@ -12,4 +12,4 @@
 !/log/.keep
 /tmp
 /config/application.yml
-/initializers/refile.rb
+config/initializers/refile.rb
