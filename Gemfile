@@ -13,6 +13,11 @@ gem 'uglifier', '>= 1.3.0'
 gem 'devise', '~> 4.2'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
+gem "refile-s3"
+#-----Refile gem---
+gem "refile", require: "refile/rails"
+gem "refile-mini_magick"
+
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'rails_12factor'

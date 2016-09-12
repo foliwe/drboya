@@ -6,7 +6,9 @@
 
         <div class="col-sm-12 col-md-6">
             <h3><%= link_to product.title, product %></h3>
-            <p><%= truncate (product.description),length: 90 %> <%= link_to "...more",product%></p>
+            <%= link_to product do %>
+            <p><%=image_tag attachment_url(product, :product_image, :fill, 300, 300, format: "jpg") %></p>
+            <%end%>
          </div>  
          <% end %>          
     </div>
