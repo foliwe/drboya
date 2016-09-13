@@ -7,16 +7,18 @@ gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'sass-rails', '~> 5.0'
 gem 'puma', '~> 3.6'
+gem 'jquery-rails'
 gem 'font-awesome-sass'
 gem 'will_paginate', '~> 3.1'
 gem 'uglifier', '>= 1.3.0'
 gem 'devise', '~> 4.2'
 gem 'coffee-rails', '~> 4.1.0'
-gem 'jquery-rails'
-gem "refile-s3"
+#gem "refile-s3"
+gem 'carrierwave', '~> 0.11.2'
+gem 'mini_magick', '~> 4.5', '>= 4.5.1'
 #-----Refile gem---
-gem "refile", require: "refile/rails"
-gem "refile-mini_magick"
+#gem "refile", require: "refile/rails"
+#gem "refile-mini_magick"
 
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'

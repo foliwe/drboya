@@ -2,14 +2,14 @@
 		<p>
   <h2><%= @product.title %></h2>
 		</p>
-<%= image_tag attachment_url(@product, :product_image, :fill, 300, 300, format: "jpg") %>
+<%= image_tag(@product.picture.url, size: "300x250")if @product.picture? %>
 		<p>
   <strong>Description:</strong>
   <p><%= @product.description %></p>
    <strong>Composition:</strong>
-   <p><%= @product.composition %></p>
+   <p><%= simple_format(@product.composition) %></p>
     <strong>Usage:</strong>
-    <p><%= @product.usage %></p>
+    <p><%= simple_format(@product.usage) %></p>
      <strong>Duration in days:</strong>
     <p><%= @product.duration %></p>
   <% if user_signed_in? %>

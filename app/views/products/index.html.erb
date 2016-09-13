@@ -7,7 +7,7 @@
         <div class="col-sm-12 col-md-6">
             <h3><%= link_to product.title, product %></h3>
             <%= link_to product do %>
-            <p><%=image_tag attachment_url(product, :product_image, :fill, 300, 300, format: "jpg") %></p>
+            <p><%= image_tag(product.picture.url)if product.picture? %></p>
             <%end%>
          </div>  
          <% end %>          
