@@ -2,7 +2,7 @@
 		<p>
   <h2><%= @product.title %></h2>
 		</p>
-<%= image_tag(@product.picture.url, size: "300x250")if @product.picture? %>
+<%= image_tag(@product.picture.url(:show))if @product.picture? %>
 		<p>
   <strong>Description:</strong>
   <p><%= @product.description %></p>

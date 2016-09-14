@@ -79,7 +79,13 @@
               <div class="well text-center">
                 <h2>Latest Products</h2>
               <%@products.each do |product| %>
-               <p><%= link_to product.title,product %></p>
+                <%= link_to product.title ,product%>
+
+                <!-- Add thumbnail display-->
+               <!--<%= link_to product do %>
+            <%= image_tag(product.picture.url(:xsmall))if product.picture?%>
+            <%end%>-->
+
                <hr>
                <% end %>
                <%=link_to 'view all products', products_path %>

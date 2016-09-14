@@ -20,7 +20,7 @@
  @import "font-awesome";
  @import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700';
  @import 'https://fonts.googleapis.com/css?family=Carrois+Gothic+SC';
-
+$color: #2980b9;
  body{
  font-family: 'Open Sans Condensed', sans-serif;
  font-size: 20px;
@@ -46,7 +46,7 @@ font-weight: bold;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
 }
 .navbar-default{
- background:#2980b9;
+ background:$color;
  
 }
 
@@ -77,4 +77,24 @@ font-weight: bold;
 color: #fff;
 }
 
+.indeximage{
+ border-radius: 5px;
+  border: 1px solid $color;
+  padding-bottom: 20px;
+  height: 400px;
+  margin-bottom:10px;
+
+  h2{
+  text-align:center;
+  padding: 4px;
+  }
+
+  img.displayed {
+    display: block;
+    max-width: 100%;
+    padding-top: 20px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto }
+}
 
