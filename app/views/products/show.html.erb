@@ -1,16 +1,29 @@
 <div class="container">
-		<p>
-  <h2><%= @product.title %></h2>
-		</p>
-<%= image_tag(@product.picture.url(:show))if @product.picture? %>
-		<p>
-  <strong>Description:</strong>
+		<div class="row">
+    <div class="col-md-6">
+    <%= image_tag(@product.picture.url(:show))if @product.picture? %>
+    </div>  
+    <div class="col-md-6">
+       <h2><%= @product.title %></h2>
+       <strong class="title">Description</strong>
   <p><%= @product.description %></p>
-   <strong>Composition:</strong>
-   <p><%= simple_format(@product.composition) %></p>
-    <strong>Usage:</strong>
-    <p><%= simple_format(@product.usage) %></p>
-     <strong>Duration in days:</strong>
+
+    </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+          <strong class="title">Composition</strong>
+          <p><%= simple_format(@product.composition) %></p>
+      </div>
+      <div class="col-md-6">
+        <strong class="title">Usage</strong>
+       <p><%= simple_format(@product.usage) %></p>
+      </div>
+    </div>
+  
+   
+    
+     <strong class="title">Duration in days</strong>
     <p><%= @product.duration %></p>
   <% if user_signed_in? %>
 		</p>
