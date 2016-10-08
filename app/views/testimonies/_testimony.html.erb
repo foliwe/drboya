@@ -1,5 +1,7 @@
- <p><%= testimony.body %></p>
-<p><%= testimony.name %></p>
+ <blockquote>
+ 	<p><%= testimony.body %></p>
+ 	<cite title="Source Title"><%= testimony.name %></cite>
+ </blockquote>
 	<% if user_signed_in? && current_page?(testimonies_url)%> 
 	      <%= link_to "Delete this testimony", testimony, method: :delete,
 				  data: { confirm: "Are you sure you want to delete this testimony?"},
