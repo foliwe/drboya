@@ -1,0 +1,2 @@
+$('#posts').html('<%= escape_javascript render(@testimonies) %>');
+$('#paginator').html('<%= escape_javascript(paginate(@testimonies, remote: true).to_s) %>');

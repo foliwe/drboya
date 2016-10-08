@@ -65,12 +65,13 @@
           <h2>Testimonies</h2>
           <div class="">
             <blockquote>
-               <%@testimonies.each do |testimony| %>
-               <p><%= testimony.body %></p>
-               <p><small><%= testimony.name %></small></p>
-               <br>
-               <% end %>
-               <%= will_paginate @testimonies %>
+               <div id="posts">
+       <%= render @testimonies %>
+      </div>
+               <div id="paginator">
+                <%= paginate @testimonies, remote: true %>
+               <!--%= will_paginate @testimonies %-->
+               </div>
             </blockquote>
           </div>
           </div>

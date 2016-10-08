@@ -1,18 +1,13 @@
 <div class="container">
 		<h2>Testimonies</h2>
-		<div class="">
-				 <%@testimonies.each do |testimony| %>
-				 <p><%= testimony.body %></p>
-				 <p><%= testimony.name %></p>
-
-				 <% if user_signed_in?%>
-				  		<%= link_to "Delete this testimony", testimony, method: :delete,
-			      		data: { confirm: "Are you sure you want to delete this testimony?"},
-			      		class: "btn btn-xs btn-danger" %>
-			        <% end %>
+		<div id="posts">
+		   <%= render @testimonies %>
+	    </div>
 
 			<hr>
-				 <% end %>
-				 <%= will_paginate @testimonies %>
-	</div>
+			
+		  <div id="paginator">
+				 <%= paginate @testimonies, remote: true %>
+				 <!--%= will_paginate @testimonies %-->
+		 </div>
 </div>

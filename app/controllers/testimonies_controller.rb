@@ -2,7 +2,7 @@ class TestimoniesController < ApplicationController
 
   before_action :authenticate_user! ,except:[:index]
   def index
-    @testimonies = Testimony.paginate(:page => params[:page], :per_page => 1).order("created_at DESC")
+    @testimonies = Testimony.page(params[:page]).per(2)#paginate(:page => params[:page], :per_page => 1).order("created_at DESC")
   end
 
 
